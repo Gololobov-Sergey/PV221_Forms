@@ -63,9 +63,10 @@
             // 
             // button1
             // 
-            button1.Location = new System.Drawing.Point(613, 329);
+            button1.Location = new System.Drawing.Point(701, 439);
+            button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             button1.Name = "button1";
-            button1.Size = new System.Drawing.Size(128, 21);
+            button1.Size = new System.Drawing.Size(146, 28);
             button1.TabIndex = 1;
             button1.Text = "button1";
             button1.UseVisualStyleBackColor = true;
@@ -73,38 +74,35 @@
             // 
             // label1
             // 
-            label1.Location = new System.Drawing.Point(10, 16);
+            label1.Location = new System.Drawing.Point(11, 21);
             label1.Name = "label1";
-            label1.Size = new System.Drawing.Size(105, 56);
+            label1.Size = new System.Drawing.Size(120, 75);
             label1.TabIndex = 2;
             label1.Text = "label1";
             // 
             // listBox1
             // 
             listBox1.FormattingEnabled = true;
-            listBox1.ItemHeight = 15;
+            listBox1.ItemHeight = 20;
             listBox1.Items.AddRange(new object[] { "січень", "лютий", "березень", "квітень", "травень", "червень" });
-            listBox1.Location = new System.Drawing.Point(94, 91);
-            listBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            listBox1.Location = new System.Drawing.Point(107, 121);
             listBox1.Name = "listBox1";
             listBox1.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
-            listBox1.Size = new System.Drawing.Size(118, 109);
+            listBox1.Size = new System.Drawing.Size(134, 144);
             listBox1.TabIndex = 3;
             // 
             // textBox1
             // 
-            textBox1.Location = new System.Drawing.Point(94, 214);
-            textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            textBox1.Location = new System.Drawing.Point(107, 285);
             textBox1.Name = "textBox1";
-            textBox1.Size = new System.Drawing.Size(118, 23);
+            textBox1.Size = new System.Drawing.Size(134, 27);
             textBox1.TabIndex = 4;
             // 
             // button2
             // 
-            button2.Location = new System.Drawing.Point(94, 252);
-            button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            button2.Location = new System.Drawing.Point(107, 336);
             button2.Name = "button2";
-            button2.Size = new System.Drawing.Size(117, 22);
+            button2.Size = new System.Drawing.Size(134, 29);
             button2.TabIndex = 5;
             button2.Text = "Add";
             button2.UseVisualStyleBackColor = true;
@@ -112,10 +110,9 @@
             // 
             // button3
             // 
-            button3.Location = new System.Drawing.Point(94, 286);
-            button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            button3.Location = new System.Drawing.Point(107, 381);
             button3.Name = "button3";
-            button3.Size = new System.Drawing.Size(117, 22);
+            button3.Size = new System.Drawing.Size(134, 29);
             button3.TabIndex = 6;
             button3.Text = "Print";
             button3.UseVisualStyleBackColor = true;
@@ -124,19 +121,17 @@
             // listBox2
             // 
             listBox2.FormattingEnabled = true;
-            listBox2.ItemHeight = 15;
-            listBox2.Location = new System.Drawing.Point(257, 91);
-            listBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            listBox2.ItemHeight = 20;
+            listBox2.Location = new System.Drawing.Point(294, 121);
             listBox2.Name = "listBox2";
-            listBox2.Size = new System.Drawing.Size(110, 109);
+            listBox2.Size = new System.Drawing.Size(125, 144);
             listBox2.TabIndex = 7;
             // 
             // btnCopy
             // 
-            btnCopy.Location = new System.Drawing.Point(257, 252);
-            btnCopy.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            btnCopy.Location = new System.Drawing.Point(294, 336);
             btnCopy.Name = "btnCopy";
-            btnCopy.Size = new System.Drawing.Size(109, 22);
+            btnCopy.Size = new System.Drawing.Size(125, 29);
             btnCopy.TabIndex = 8;
             btnCopy.Text = "Copy";
             btnCopy.UseVisualStyleBackColor = true;
@@ -144,10 +139,9 @@
             // 
             // btnMove
             // 
-            btnMove.Location = new System.Drawing.Point(257, 286);
-            btnMove.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            btnMove.Location = new System.Drawing.Point(294, 381);
             btnMove.Name = "btnMove";
-            btnMove.Size = new System.Drawing.Size(109, 22);
+            btnMove.Size = new System.Drawing.Size(125, 29);
             btnMove.TabIndex = 9;
             btnMove.Text = "Move";
             btnMove.UseVisualStyleBackColor = true;
@@ -158,46 +152,41 @@
             checkedListBox1.CheckOnClick = true;
             checkedListBox1.FormattingEnabled = true;
             checkedListBox1.Items.AddRange(new object[] { "січень", "лютий", "березень", "квітень", "травень", "червень" });
-            checkedListBox1.Location = new System.Drawing.Point(407, 91);
-            checkedListBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            checkedListBox1.Location = new System.Drawing.Point(465, 121);
             checkedListBox1.MultiColumn = true;
             checkedListBox1.Name = "checkedListBox1";
-            checkedListBox1.Size = new System.Drawing.Size(117, 94);
+            checkedListBox1.Size = new System.Drawing.Size(133, 114);
             checkedListBox1.TabIndex = 10;
             // 
             // comboBox1
             // 
             comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new System.Drawing.Point(560, 91);
-            comboBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            comboBox1.Location = new System.Drawing.Point(640, 121);
             comboBox1.Name = "comboBox1";
-            comboBox1.Size = new System.Drawing.Size(154, 23);
+            comboBox1.Size = new System.Drawing.Size(175, 28);
             comboBox1.TabIndex = 11;
             // 
             // dateTimePicker1
             // 
-            dateTimePicker1.Location = new System.Drawing.Point(407, 251);
-            dateTimePicker1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            dateTimePicker1.Location = new System.Drawing.Point(465, 335);
             dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new System.Drawing.Size(175, 23);
+            dateTimePicker1.Size = new System.Drawing.Size(199, 27);
             dateTimePicker1.TabIndex = 12;
             // 
             // progressBar1
             // 
-            progressBar1.Location = new System.Drawing.Point(87, 329);
-            progressBar1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            progressBar1.Location = new System.Drawing.Point(99, 439);
             progressBar1.Name = "progressBar1";
-            progressBar1.Size = new System.Drawing.Size(486, 18);
+            progressBar1.Size = new System.Drawing.Size(555, 24);
             progressBar1.Step = 1;
             progressBar1.TabIndex = 13;
             // 
             // numericUpDown1
             // 
-            numericUpDown1.Location = new System.Drawing.Point(94, 52);
-            numericUpDown1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            numericUpDown1.Location = new System.Drawing.Point(107, 69);
             numericUpDown1.Maximum = new decimal(new int[] { 10, 0, 0, 0 });
             numericUpDown1.Name = "numericUpDown1";
-            numericUpDown1.Size = new System.Drawing.Size(117, 23);
+            numericUpDown1.Size = new System.Drawing.Size(134, 27);
             numericUpDown1.TabIndex = 14;
             numericUpDown1.ValueChanged += numericUpDown1_ValueChanged;
             // 
@@ -207,10 +196,9 @@
             // 
             // btnStart
             // 
-            btnStart.Location = new System.Drawing.Point(347, 50);
-            btnStart.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            btnStart.Location = new System.Drawing.Point(397, 67);
             btnStart.Name = "btnStart";
-            btnStart.Size = new System.Drawing.Size(82, 22);
+            btnStart.Size = new System.Drawing.Size(94, 29);
             btnStart.TabIndex = 15;
             btnStart.Text = "Start";
             btnStart.UseVisualStyleBackColor = true;
@@ -219,19 +207,18 @@
             // label2
             // 
             label2.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            label2.Location = new System.Drawing.Point(241, 30);
+            label2.Location = new System.Drawing.Point(275, 40);
             label2.Name = "label2";
-            label2.Size = new System.Drawing.Size(87, 42);
+            label2.Size = new System.Drawing.Size(99, 56);
             label2.TabIndex = 16;
             label2.Text = "0";
             label2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // button4
             // 
-            button4.Location = new System.Drawing.Point(442, 50);
-            button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            button4.Location = new System.Drawing.Point(505, 67);
             button4.Name = "button4";
-            button4.Size = new System.Drawing.Size(82, 22);
+            button4.Size = new System.Drawing.Size(94, 29);
             button4.TabIndex = 17;
             button4.Text = "Stop";
             toolTip1.SetToolTip(button4, "Зупиняє таймер");
@@ -244,11 +231,13 @@
             // 
             // statusStrip1
             // 
+            statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] { nowTime, toolStripSplitButton1 });
-            statusStrip1.Location = new System.Drawing.Point(0, 382);
+            statusStrip1.Location = new System.Drawing.Point(0, 513);
             statusStrip1.Name = "statusStrip1";
+            statusStrip1.Padding = new System.Windows.Forms.Padding(16, 0, 1, 0);
             statusStrip1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            statusStrip1.Size = new System.Drawing.Size(774, 22);
+            statusStrip1.Size = new System.Drawing.Size(1111, 26);
             statusStrip1.TabIndex = 18;
             statusStrip1.Text = "statusStrip1";
             // 
@@ -256,7 +245,7 @@
             // 
             nowTime.Name = "nowTime";
             nowTime.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            nowTime.Size = new System.Drawing.Size(118, 17);
+            nowTime.Size = new System.Drawing.Size(151, 20);
             nowTime.Text = "toolStripStatusLabel1";
             // 
             // toolStripSplitButton1
@@ -268,25 +257,25 @@
             toolStripSplitButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             toolStripSplitButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             toolStripSplitButton1.Name = "toolStripSplitButton1";
-            toolStripSplitButton1.Size = new System.Drawing.Size(100, 20);
+            toolStripSplitButton1.Size = new System.Drawing.Size(100, 24);
             toolStripSplitButton1.Text = "Language";
             // 
             // fghjkklhgToolStripMenuItem
             // 
             fghjkklhgToolStripMenuItem.Name = "fghjkklhgToolStripMenuItem";
-            fghjkklhgToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            fghjkklhgToolStripMenuItem.Size = new System.Drawing.Size(153, 26);
             fghjkklhgToolStripMenuItem.Text = "fghjkklhg";
             // 
             // dfsghToolStripMenuItem
             // 
             dfsghToolStripMenuItem.Name = "dfsghToolStripMenuItem";
-            dfsghToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            dfsghToolStripMenuItem.Size = new System.Drawing.Size(153, 26);
             dfsghToolStripMenuItem.Text = "dfsgh";
             // 
             // sadfghjToolStripMenuItem
             // 
             sadfghjToolStripMenuItem.Name = "sadfghjToolStripMenuItem";
-            sadfghjToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            sadfghjToolStripMenuItem.Size = new System.Drawing.Size(153, 26);
             sadfghjToolStripMenuItem.Text = "sadfghj";
             // 
             // timer2
@@ -298,19 +287,20 @@
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.Csharp_Logo;
-            pictureBox1.Location = new System.Drawing.Point(581, 132);
+            pictureBox1.Location = new System.Drawing.Point(664, 176);
+            pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new System.Drawing.Size(100, 94);
+            pictureBox1.Size = new System.Drawing.Size(114, 125);
             pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 19;
             pictureBox1.TabStop = false;
             // 
             // Form1
             // 
-            AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             BackColor = System.Drawing.SystemColors.Control;
-            ClientSize = new System.Drawing.Size(774, 404);
+            ClientSize = new System.Drawing.Size(1111, 539);
             Controls.Add(pictureBox1);
             Controls.Add(statusStrip1);
             Controls.Add(button4);
@@ -330,7 +320,6 @@
             Controls.Add(listBox1);
             Controls.Add(button1);
             Controls.Add(label1);
-            Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             Name = "Form1";
             StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             Text = "Form1";
