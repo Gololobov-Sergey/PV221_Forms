@@ -74,5 +74,57 @@ namespace PV221_Forms
                 richTextBox1.SelectionColor = fontDialog1.Color;
             }
         }
+
+        private void відкритиToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            btnOpen_Click(sender, e);
+        }
+
+        private void toolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripMenuItem10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void англійськаToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            menuStrip1.Visible = false;
+            menuStrip2.Visible = true;
+            toolStripMenuItem13.CheckState = CheckState.Checked;
+        }
+
+        private void українськаToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripMenuItem12_Click(object sender, EventArgs e)
+        {
+            menuStrip1.Visible = true;
+            menuStrip2.Visible = false;
+            українськаToolStripMenuItem.CheckState = CheckState.Checked;
+        }
+
+        private void toolStripMenuItem13_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void копіюватиToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Clipboard.SetText(richTextBox1.SelectedText);
+        }
+
+        private void вствитиToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            richTextBox1.Text = new string(richTextBox1.Text.Take(richTextBox1.SelectionStart).ToArray()) +
+                Clipboard.GetText() +
+                new string(richTextBox1.Text.Skip(richTextBox1.SelectionStart).ToArray());
+
+        }
     }
 }
