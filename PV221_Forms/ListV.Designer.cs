@@ -39,11 +39,15 @@
             comboBox1 = new System.Windows.Forms.ComboBox();
             listBox1 = new System.Windows.Forms.ListBox();
             listBox2 = new System.Windows.Forms.ListBox();
+            dataGridView1 = new System.Windows.Forms.DataGridView();
+            Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // listView1
             // 
             listView1.HideSelection = false;
+            listViewItem1.Tag = new decimal(new int[] { 100, 0, 0, 0 });
             listView1.Items.AddRange(new System.Windows.Forms.ListViewItem[] { listViewItem1, listViewItem2, listViewItem3 });
             listView1.LargeImageList = imageList2;
             listView1.Location = new System.Drawing.Point(54, 52);
@@ -105,17 +109,40 @@
             listBox2.DragEnter += listBox2_DragEnter;
             listBox2.DragOver += listBox2_DragOver;
             // 
+            // dataGridView1
+            // 
+            dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] { Column1 });
+            dataGridView1.Location = new System.Drawing.Point(54, 395);
+            dataGridView1.MultiSelect = false;
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowHeadersWidth = 51;
+            dataGridView1.RowTemplate.Height = 29;
+            dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            dataGridView1.Size = new System.Drawing.Size(857, 239);
+            dataGridView1.TabIndex = 4;
+            // 
+            // Column1
+            // 
+            Column1.HeaderText = "Column1";
+            Column1.MinimumWidth = 6;
+            Column1.Name = "Column1";
+            Column1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
+            Column1.Width = 125;
+            // 
             // ListV
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            ClientSize = new System.Drawing.Size(965, 450);
+            ClientSize = new System.Drawing.Size(965, 659);
+            Controls.Add(dataGridView1);
             Controls.Add(listBox2);
             Controls.Add(listBox1);
             Controls.Add(comboBox1);
             Controls.Add(listView1);
             Name = "ListV";
             Text = "ListV";
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
         }
 
@@ -127,5 +154,7 @@
         private System.Windows.Forms.ImageList imageList2;
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.ListBox listBox2;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
     }
 }

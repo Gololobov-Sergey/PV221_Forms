@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
@@ -16,6 +17,68 @@ namespace PV221_Forms
         {
             InitializeComponent();
             comboBox1.SelectedIndex = 0;
+
+            ListView l = new ListView();
+            l.Items.Add("qqqq");
+            l.Items[0].Tag = 0.5M;
+
+            ObservableCollection<Student> group = new ObservableCollection<Student>
+            {
+                new Student()
+                {
+                    LastName = "Osipov",
+                    FirstName = "Oleg",
+                    BirthDay = new DateTime(2000, 12, 15),
+                    StudentCard = new StudentCard()
+                    {
+                        Series = "AB",
+                        Number = 123456
+                    }
+                },
+
+                new Student()
+                {
+                    LastName = "Petrova",
+                    FirstName = "Maria",
+                    BirthDay = new DateTime(2002, 04, 20),
+                    StudentCard = new StudentCard()
+                    {
+                        Series = "AB",
+                        Number = 129956
+                    }
+                },
+
+                new Student()
+                {
+                    LastName = "Fedorov",
+                    FirstName = "Petro",
+                    BirthDay = new DateTime(1999, 01, 10),
+                    StudentCard = new StudentCard()
+                    {
+                        Series = "AC",
+                        Number = 123456
+                    }
+                },
+
+                new Student()
+                {
+                    LastName = "Abramova",
+                    FirstName = "Olga",
+                    BirthDay = new DateTime(2005, 12, 14),
+                    StudentCard = new StudentCard()
+                    {
+                        Series = "AA",
+                        Number = 124123
+                    }
+                }
+            };
+
+            dataGridView1.DataSource = group;
+
+            foreach (DataGridViewColumn c in dataGridView1.Columns)
+            {
+                c.SortMode = DataGridViewColumnSortMode.Automatic;
+            }
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -37,6 +100,11 @@ namespace PV221_Forms
 
         private void listBox2_DragEnter(object sender, DragEventArgs e)
         {
+            if (e.Data.GetDataPresent(typeof(ListViewItem)))
+            {
+
+            }
+
             if (e.Data.GetDataPresent(DataFormats.StringFormat))
             {
                 e.Effect = DragDropEffects.All;
@@ -49,6 +117,7 @@ namespace PV221_Forms
 
         private void listBox2_DragDrop(object sender, DragEventArgs e)
         {
+            e.Data.GetData(typeof(ListViewItem));
             if (e.Effect != DragDropEffects.None)
             {
                 listBox2.Items.Add(e.Data.GetData(DataFormats.StringFormat));
