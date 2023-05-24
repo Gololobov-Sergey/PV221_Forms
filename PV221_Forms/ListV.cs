@@ -117,7 +117,7 @@ namespace PV221_Forms
 
         private void listBox2_DragDrop(object sender, DragEventArgs e)
         {
-            e.Data.GetData(typeof(ListViewItem));
+            //e.Data.GetData(typeof(ListViewItem));
             if (e.Effect != DragDropEffects.None)
             {
                 listBox2.Items.Add(e.Data.GetData(DataFormats.StringFormat));
